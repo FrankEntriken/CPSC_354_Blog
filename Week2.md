@@ -6,7 +6,7 @@ Files can be loaded within Haskell using
 
     :load file_name
 
-Once the file is loaded, the functions that are established within the file will now be available to the user
+Once the file is loaded, the functions that are defined within the file will now be available to the user.
 
 ### Creating meaningful functions
 
