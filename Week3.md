@@ -1,4 +1,4 @@
-# Week 3, Numbers and Error
+# Week 3, Number Sets
 
 ### Natural Numbers
 Natural numbers are all positive integers, including 0.
