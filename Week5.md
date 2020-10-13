@@ -2,6 +2,7 @@
 
 ### What is Lambda Calculus?
 Lambda Calculus is a simplification on the way we write expressions that allows us to include functions and their inputs in the same line. Lambda calculus is driven by abstraction, a pillar of object oriented programming that allows for the creation and use of functions. This calculus applies functions to their arguments in a very easy and focused syntax. Lambda calculus can be viewed as the simplest way to write a program.
+
 https://plato.stanford.edu/entries/lambda-calculus/
 
 ### How can we write in Lambda Calculus?
