@@ -33,7 +33,14 @@ Now, the function `mult` may seem completely unnecessary; we know that Haskell c
     [1 of 1] Compiling Main             ( fib.hs, interpreted )
     Ok, one module loaded.
     *Main> 
-    
+    *Main> fib 10
+    55
+    *Main> fib 16
+    987
+    *Main> fib 20
+    6765
+    *Main>
+
 The file fibonnaci.hs defines the function `fib` which takes in a positive integer and returns the corresponding number of the fibonacci sequence. Lets break this function down to understand each step clearly.
 
     fib 0 = 0
