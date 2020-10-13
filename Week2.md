@@ -24,8 +24,6 @@ Once the file is loaded, the functions that are defined within the file will now
 The file multply.hs defines the function `mult` which multiplies two numbers together. After loading the file we are able to use the `mult` function.
 Now, the function `mult` may seem completely unnecessary; we know that Haskell can already handle multiplication using the `*` operator. But with some creativity we can establish some more complex functions that involve multiples steps.
 
-
-
     fibonnaci.hs
     fib 0 = 0
     fib 1 = 1
