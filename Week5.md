@@ -12,6 +12,7 @@ Lets take a familiar expression and see how we rewrite it in Lambda calculus syn
       }
  
 This simple program subtracts 2 from any integer given as the argument.
+
 In Lambda calculus, we do not need to specify:
 - types
 - return statement
