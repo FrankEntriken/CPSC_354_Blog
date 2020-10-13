@@ -29,13 +29,13 @@ Lets take a look at what happens when we create functions that do not account fo
     [1 of 1] Compiling Main             ( divison.hs, interpreted )
     Ok, one module loaded.
     *Main> 
-    *Main> div_q 5 2
+    *Main> divv 5 2
     2
-    *Main> div_q 5 3
+    *Main> divv 5 3
     1
-    *Main> div_q 6 3
+    *Main> divv 6 3
     2
-    *Main> div_q 3 0
+    *Main> divv 3 0
     *** Exception: stack overflow
     *Main> 
 
