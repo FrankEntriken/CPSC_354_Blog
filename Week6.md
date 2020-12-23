@@ -22,7 +22,8 @@ Echo is built in to Mac and Windows terminals as a simple command that displays 
 
     "(\ x . S x) ..."
     
-This first bit of code is the function plus_one(). The syntax \x. represents lambda x, λx.
+This first bit of code is the function plus_one(). The syntax \x. represents lambda x (λx.).
+
 This line will return the argument, x, with an S in front of it. This syntax of representing numbers using S's and 0's is from our first Assignment when we built a calculator in Haskell. Simply put, a 0 is a 0, S 0 is 1, S S 0 is 2, S S S 0 is 3, and so forth. By returning the argument with an S in front, we are adding one.
 
     "... S S 0"
