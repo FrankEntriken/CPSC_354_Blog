@@ -1,9 +1,13 @@
 # Week 8, Ackermann Function
 
 https://mathworld.wolfram.com/PrimitiveRecursiveFunction.html
+
+
 A function that can be implemented only through do-loops is considered primitive recursive. Examples of primitive recursion are found in the power function (2^3 = 8) and the greatest common divisor function (GCD(15) = 5).
 
 https://mathworld.wolfram.com/AckermannFunction.html
+
+
 The Ackermann function introduces itself as the first example of a "well-defined total function which is computable but not primitive recursive". The Ackermann function's significance was that it was created as a counterexample to the belief that all computable functions were also primitive recursive.
 
 
