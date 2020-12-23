@@ -1,5 +1,5 @@
 
-# Week 6, Coding with Lambda Calculus, p1
+# Week 6, Coding with Lambda Calculus
 
 ### LambdaNat
 LambdaNat is a small programming language that implements the basic functionality of lambda calculus. For our purposes, we will build upon its existing functionality to create more a more complex language. Throughout weeks 6 and 7 we will explore the basic functionality of LambdaNat and see how we can use it in more interesting ways.
