@@ -70,7 +70,7 @@ After trying out the first few examples of when m=0 we notice that this input wi
            = a(0,4)
            = 5
            
-We do not see an immediate pattern emerging in our second set of examples, and I am starting to worry that continuing to further examples will become too complex. For this reason, we will use an (Ackermann function calculator)[https://www.wolframalpha.com/widgets/view.jsp?id=fecbfa88f364df34c32702b62f11a7d9] to speed up the process.
+We do not see an immediate pattern emerging in our second set of examples, and I am starting to worry that continuing to further examples will become too complex. For this reason, we will use an [Ackermann function calculator](https://www.wolframalpha.com/widgets/view.jsp?id=fecbfa88f364df34c32702b62f11a7d9) to speed up the process.
 
 ### Example 2.4: (4,0)
 
