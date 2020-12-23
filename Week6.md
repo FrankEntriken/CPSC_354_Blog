@@ -15,4 +15,36 @@ plus_one() is ran through the terminal command:
     
 Lets break down this line of code to understand what is going on.
 
+    echo
+    
+Echo is built in to Mac and Windows terminals as a simple command that displays a line of text/string that is being passed as an argument. This will allow us to see the result of the function in the terminal.
 
+
+    "(\ x . S x) ..."
+    
+This first bit of code is the function plus_one(). This line will return the argument, x, with an S in front of it. This syntax of representing numbers using S's and 0's is from our first Assignment when we built a calculator in Haskell. Simply put, a 0 is a 0, S 0 is 1, S S 0 is 2, S S S 0 is 3, and so forth. By returning the argument with an S in front, we are adding one.
+
+    "... S S 0"
+    
+The last line within the quotations is the argument being passed into the plus_one() function. S S 0 represents a 2. What we should expect as the output from this function is a 3, or S S S 0.
+
+    | stack exec LambdaNat-exe
+    
+The | character, or pipe, allows us to run a line of code into another. Stack exec LambdaNat-exe runs an argument through the LambdaNat interpreter. In our case, the program "(\ x . S x) S S 0" is being run through the interpreter, allowing us to evaluate this unique syntax within a language that understands it.
+
+    ➜  LambdaNat2 git:(master) ✗ echo "(\ x . S x) S S 0" | stack exec LambdaNat-exe
+
+     Input:
+    (\ x . S x) S S 0
+
+    [Abstract Syntax]
+
+    Prog (EApp (EAbs (Id "x") (ENatS (EVar (Id "x")))) (ENatS (ENatS ENat0)))
+
+     Output:
+    S S S 0
+    
+This is what our terminal looks like after running the entire line in the terminal. LambdaNat recognizes the input, generates the syntax that it can understand, and outputs the expected result, S S S 0.
+    
+    
+    
