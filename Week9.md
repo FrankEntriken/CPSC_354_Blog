@@ -156,7 +156,7 @@ We created a circular linked list a, which contains the address 0 (`Env: a -> <a
 
 The `insert` function takes a value and a linked list. The function creates a new element with the given value and changes the pointer of the current element to itself while pointing to the element next to the current element. After inserting the values 3 and 66, our circular linked list should look like this
 
-    [1, address <0>] --> [66, address <2>] --> [3, address <1>] -->
+    [1, <address 0>] --> [66, <address 2>] --> [3, <address 1>] -->
 
 We can modify how we insert the elements to continue adding elements to the tail of the list instead of just after the head.
 
@@ -186,4 +186,4 @@ We can modify how we insert the elements to continue adding elements to the tail
     
 This shows us a neater circular linked list, where address 0 points to 1, 1 points to 2, and 2 points back to 0.
 
-    [1, address <0>] --> [3, address <1>] --> [66, address <2>] -->
+    [1, <address 0>] --> [3, <address 1>] --> [66, <address 2>] -->
