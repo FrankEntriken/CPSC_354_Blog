@@ -10,7 +10,24 @@ I enjoyed all of the assignments within this class. They were sequential, Assign
           false -> index (e-1) (next a)
     };;
 
-The index function would allow us to return the address of the element within a certain location in the circular linked list. The function would take in an integer, acting as the location of the desired element, and a circular linked list. For example, a regular list in python could be parsed using list[0] to return the first element of the list. The integer would determine what element of the list would be returned based on its location in the list. `index` recursively calls itself, decreasing the value of e every time the current element moves to the next. When e is equal to zero, the current element a will be in the desired position of the circular linked list and return this position. From here, the user could interact with this element with any of the other functions. This is what I would hope the index function would look like when called on a circular list.
+The index function would allow us to return the address of the element within a certain location in the circular linked list. The function would take in an integer, acting as the location of the desired element, and a circular linked list. For example, a regular list in python could be parsed using list[0] to return the first element of the list. The integer would determine what element of the list would be returned based on its location in the list. `index` recursively calls itself, decreasing the value of e every time the current element moves to the next. When e is equal to zero, the current element a will be in the desired position of the circular linked list and return this position. From here, the user could interact with this element with any of the other functions. 
+
+
+
+`index` does not run because it recursively calls itself. It seems to me that LambdaFun does not have the functionality for recursion because I am met with this error:
+
+    λ insert 1 a;;
+
+    "a" is not defined
+    CallStack (from HasCallStack):
+      error, called at src/Environment.hs:24:16 in LamFun-3.14.1-HB5izHlLIvCGGFpWbUCpOd:Environment
+    λ
+    
+I did a lot of testing and poking around and, although it is hard to tell, I believe that LamdaFun is erroring out when index is being recursively called within the false case.
+
+
+
+This is what I would hope the index function would look like when called on a circular list.
 
     EXAMPLE CIRCULAR LIST 'a'
     [1, <address 0>] --> [3, <address 1>] --> [66, <address 2>] -->
