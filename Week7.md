@@ -84,6 +84,42 @@ The function takes in four arguments, two used for the comparison of integers an
         else evalCBN e4
     evalCBN x = x
     
-From here, we can practice using this syntax by generating a parser and building the interpreter. The steps for this process can be found [here](https://github.com/alexhkurz/programming-languages-2020/tree/master/Lab1-Lambda-Calculus). Once we have completed this process, we can test out our new if-then-else clause.
+From here, we can practice using this syntax by generating a parser and building the interpreter. The steps for this process can be found [here](https://github.com/alexhkurz/programming-languages-2020/tree/master/Lab1-Lambda-Calculus). Once we have completed this process, we can test out our new if-then-else clause. In a .cf file we can write lines of code to be executed by LamdaNat3.
 
+    (\ x.\y.if x = y then S 0 else 0) S O  S O
 
+This line of code will return True (S 0) or False (0) if x == y. In this example, we input x = S 0 and y = S 0. In this case, we should expect a result of S 0 because both inputs are equal.
+
+    ➜  LambdaNat3 git:(master) ✗ stack exec LambdaNat-exe test/tests.lc
+    test/tests.lc
+
+     Input:
+    (\ x . \ y . if x = y then S 0 else 0) S O S O
+
+    [Abstract Syntax]
+
+    Prog (EApp (EApp (EAbs (Id "x") (EAbs (Id "y") (EIfThEl (EVar (Id "x")) (EVar (Id "y")) (ENatS ENat0) ENat0))) (ENatS (EVar (Id "O")))) (ENatS (EVar (Id "O"))))
+
+     Output:
+    S 0
+
+Our output is correct! Now lets test a case in which the input is not equal.
+
+    CODE
+    (\ x.\y.if x = y then S 0 else 0) S O  S S S S O
+    
+    TERMINAL
+    ➜  LambdaNat3 git:(master) ✗ stack exec LambdaNat-exe test/tests.lc
+    test/tests.lc
+
+     Input:
+    (\ x . \ y . if x = y then S 0 else 0) S O S S S S O
+
+    [Abstract Syntax]
+
+    Prog (EApp (EApp (EAbs (Id "x") (EAbs (Id "y") (EIfThEl (EVar (Id "x")) (EVar (Id "y")) (ENatS ENat0) ENat0))) (ENatS (EVar (Id "O")))) (ENatS (ENatS (ENatS         (ENatS (EVar (Id "O")))))))
+
+     Output:
+    0
+    
+Success! Both results of the if-then-else clause seem to be working.
