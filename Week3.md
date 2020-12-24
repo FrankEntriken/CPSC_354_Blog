@@ -60,5 +60,3 @@ A more successful implementation of `divv` would include a case for catching 0 i
     *Main> 
 
 With the addition of the new first line we see that cases with 0 in the divisor show a clear message to the user why their input is not valid. This is a much more customized error message than the standard stack overflow exception which does not tell the user exactly what is wrong within the function.
-
-*** Add fractions example??
