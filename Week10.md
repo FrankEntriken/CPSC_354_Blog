@@ -52,6 +52,8 @@ This is what I would hope the index function would look like when called on a ci
 
 If the user were to index past the 'last item' in a circular linked list, it would index back to the beginning like expected.
 
+### Extending `index` to the other functions
+
 The functionality of an index function would allow us to add much more accuracy to all of the other functions we have created by simply introducing the `p` variable to the argument. Adding a `p` variable would let the user specify where in the list they would like this function to occur, allowing them to choose their current element of the list instead of relying on many `next`s put together. As of now, if you had a circular linked list of 10 elements, you would need to string together 7 `next`s in order to access the 8th element. With `index`, we would simply specify the element within the argument of the function. We could update the existing functions as so:
 
     -- it is not necessary to change next
