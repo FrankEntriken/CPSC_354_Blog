@@ -84,7 +84,7 @@ The function takes in four arguments, two used for the comparison of integers an
         else evalCBN e4
     evalCBN x = x
     
-From here, we can practice using this syntax by generating a parser and building the interpreter. The steps for this process can be found [here](https://github.com/alexhkurz/programming-languages-2020/tree/master/Lab1-Lambda-Calculus). Once we have completed this process, we can test out our new if-then-else clause. In a .cf file we can write lines of code to be executed by LamdaNat3.
+From here, we can practice using this syntax by generating a parser and building the interpreter. The steps for this process can be found [here](https://github.com/alexhkurz/programming-languages-2020/tree/master/Lab1-Lambda-Calculus). Once we have completed this process we can test out our new if-then-else clause. In a .cf file we can write lines of code to be executed by LamdaNat3.
 
     (\ x.\y.if x = y then S 0 else 0) S O  S O
 
